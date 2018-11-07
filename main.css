@@ -1,0 +1,30 @@
+body{
+  background:    url("bg_backwave.png") left 300px repeat-x,
+                 url("ship.png") 300px 150px no-repeat,
+                 url("bg_frontwave.png") left 300px repeat-x,
+                 url("bg_clouds.gif") repeat-x,
+                 -webkit-linear-gradient(top, #6fbdc3 10%,#1f243a 100%),
+                 #6fbdc3;
+              }
+
+#main  {
+  border:1px solid red;
+  width:800px;
+  height:10000px;
+  margin:0 auto;
+  position:relative;
+}
+ #counter{
+    height:30px;
+    width:80px;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid blue;
+    position: absolute;
+    top:100px;
+    left:0;
+    color: white;
+    font-family: verdana, sans-serif;
+    font-weight: 900;
+    background-color: navy;
+    }
