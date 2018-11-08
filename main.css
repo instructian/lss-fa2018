@@ -1,12 +1,18 @@
 body{
-  background:    url("bg_backwave.png") left 300px repeat-x,
+  background:    url("bg_backwave.png") -7px 300px repeat-x,
                  url("ship.png") 300px 150px no-repeat,
-                 url("bg_frontwave.png") left 300px repeat-x,
-                 url("bg_clouds.gif") repeat-x,
+                 url("bg_frontwave.png") 0 300px repeat-x,
+                 url("bg_clouds.gif") 0 0 repeat-x,
                  -webkit-linear-gradient(top, #6fbdc3 10%,#1f243a 100%),
                  #6fbdc3;
+  animation: wave 5s infinite ease-in-out;
               }
+  @keyframes wave {
+       50%{background-position:  7px 303px,300px 153px,-30px 292px,-10px 0,2px 0,0 0 ;}
+  }
 
+/* css gradient designer http://www.colorzilla.com/gradient-editor/ */
+/* color picker for chrome */
 #main  {
   border:1px solid red;
   width:800px;
