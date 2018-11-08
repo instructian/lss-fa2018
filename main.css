@@ -4,6 +4,7 @@ body{
                  url("bg_frontwave.png") 0 300px repeat-x,
                  url("bg_clouds.gif") 0 0 repeat-x,
                  linear-gradient(to top, #6fbdc3 10%,#1f243a 100%),
+                 -webkit-linear-gradient(to top, #6fbdc3 10%,#1f243a 100%),
                  #6fbdc3;
   animation: wave 5s infinite ease-in-out;
               }
