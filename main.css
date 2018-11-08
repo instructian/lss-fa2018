@@ -10,7 +10,6 @@ body{
   @keyframes wave {
        50%{background-position:  7px 303px,300px 153px,-30px 297px,-10px 0,2px 0,0 0 ;}
   }
-
 /* css gradient designer http://www.colorzilla.com/gradient-editor/ */
 /* color picker for chrome */
 #main  {
