@@ -13,7 +13,7 @@ window.onscroll = function(){
 
 
 
-                  counter.style.top = 100 + distance +"px";
+                  counter.style.top = 60 + distance +"px";
                   counter.style.transform="rotate("+ distance +"deg)";
 
 
@@ -21,7 +21,7 @@ window.onscroll = function(){
                   if(distance > 2000){
                     counter.style.backgroundColor ="red";
                     } else {
-                    document.getElementById('counter').style.backgroundColor ="navy";
+                    document.getElementById('counter').style.backgroundColor ="#F2E2CF";
                     }
 
 

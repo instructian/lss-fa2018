@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style media="screen">
+  html, body{
+height:100%;
+margin:0;
+padding:0;
+
+}
+
+#main{
+width:10000px;
+height:100%;
+/* border:1px solid red; */
+position: relative;
+bottom:0;
+/* https://cssgradient.io/ */
+background: rgb(54,41,255);
+background: linear-gradient(180deg, rgba(54,41,255,1) 30%, rgba(210,210,255,1) 81%, rgba(1,201,22,1) 83%, rgba(103,59,2,1) 89%);
+}
+
+#walk{
+position: fixed;
+left:300px;
+bottom:160px;
+height:163px;
+width:130px;
+border:1px solid red;
+background:url("walk.png")
+}
+.restart {
+animation: play .8s steps(8);
+}
+
+
+@keyframes play{
+ from { background-position:    0px; }
+   to { background-position: -1000px; }
+}
+  </style>
+</head>
+<body>
+<div id="main">
+
+  <div id="walk" class="restart"></div>
+
+</div>
+<script type="text/javascript">
+
+var walk = document.getElementById("walk");
+
+function runAnimation(){
+walk.classList.add("restart");
+}
+
+function stopAnimation(){
+walk.classList.remove("restart");
+}
+
+// window.addEventListener('scroll', runAnimation);
+window.addEventListener('scroll', runAnimation);
+walk.addEventListener('animationend', stopAnimation);
+
+</script>
+</body>
+</html>
