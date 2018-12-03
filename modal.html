@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="iziModal.min.css">
+  <style>
+    body {height:10000px;}
+  </style>
+</head>
+<body>
+
+
+  <!-- Modal structure -->
+<div id="modal1">
+hello from modal 1
+</div>
+
+<!-- Trigger to open Modal -->
+<!-- <a href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Modal</a> -->
+
+<a href="http://google.com" id="button1">go to google</a>
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="iziModal.min.js"></script>
+<script>
+
+  //$("#modal").iziModal();
+  $("#modal1").iziModal();
+
+
+
+  $(document).on('click', '#button1', function (event) {
+      event.preventDefault();
+      // $('#modal').iziModal('setZindex', 99999);
+      // $('#modal').iziModal('open', { zindex: 99999 });
+      $('#modal1').iziModal('open');
+      $('#modal1').iziModal('setTitle', 'Hello title');
+  });
+
+
+
+  var counter = document.getElementById('counter');
+
+  window.onscroll = function(){
+
+                    var distance = window.pageYOffset;
+                    console.log(distance);
+
+
+
+                    if(distance > 2000){
+                      $('#modal1').iziModal('open');
+                      $('#modal1').iziModal('setTitle', 'Hello title');
+                      } else {
+                      $('#modal1').iziModal('close');
+                      }
+
+
+
+
+        }
+
+
+
+
+
+</script>
+  </body>
+</html>
